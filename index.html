@@ -7,20 +7,21 @@
     <style>
         /* 按钮样式 */
         .my-button {
-            padding: 10px 20px;
+            padding: 20px 40px; /* 按钮的内边距 */
             background-color: #4CAF50; /* 绿色背景 */
             color: white; /* 白色文字 */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px; /* 按钮和图片之间的间距 */
+            font-size: 18px; /* 字形大小 */
         }
         .my-button:hover {
             background-color: #45a049; /* 悬停时变深绿色 */
         }
         /* 图片样式 */
         .my-image {
-            max-width: 80%; /* 这里把最大宽度改为80%，可以根据需要调整 */
+            max-width: 80%; /* 这里把最大宽度改为80% */
             height: auto; /* 高度自动 */
         }
     </style>
@@ -28,12 +29,9 @@
 <body>
     <img src="welcome.jpg" class="my-image"> <!-- 替换为你想显示的图片链接 -->
 
-    <button class="my-button" onclick="openLink()">点击下载PCL</button>
+    <a href="Plain Craft Launcher 2.exe" download>
+        <button class="my-button">点击下载PCL</button>
+    </a>
 
-    <script>
-        function openLink() {
-            window.open('https://i-930.wwentua.com:446/10102100202068279bb/2024/10/01/840dc6293eb603717615d88e73c407bd.zip?st=qIdpPXjX37GcszeGOQaoQg&e=1728568070&b=UlIAZQhkA2MFMVB1BzIAJAViXiwEPVB4UTpcfwB9VzwIKg_c_c&fi=202068279&pid=223-73-100-44&up=2&mp=0&co=0); // 替换为你想打开的链接
-        }
-    </script>
 </body>
 </html>
