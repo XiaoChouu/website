@@ -1,8 +1,9 @@
+<!DOCTYPE html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft</title>
-    <link rel="icon" href="your-icon-file.ico" type="image/x-icon"> <!-- 添加这一行 -->
     <style>
         /* 按钮样式 */
         .my-button {
@@ -24,3 +25,25 @@
         }
     </style>
 </head>
+<body>
+    <img src="minecraftpicture.jpg" class="my-image" alt="欢迎图片"> <!-- 添加alt属性以提高可访问性 -->
+
+    <button class="my-button" onclick="openLink()">点击下载PCL</button>
+
+    <script>
+        function openLink() {
+            try {
+                const url = 'https://xmsky2-my.sharepoint.com/personal/xm_aoe_top/_layouts/15/download.aspx?UniqueId=de1b9010-df40-4052-82eb-90e692b93f9b&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwZGRjMDYwYi1jNDYwLTQ3MjgtODc5OS1lOWE3Mjk3OGE2OTMiLCJhcHBfZGlzcGxheW5hbWUiOiJvbmUtbmV4dCIsImFwcGlkIjoiOGFjYWUzM2EtNjhiZi00NzljLTk3ZmYtYTc1ZWUyNjE1ZWRkIiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3htc2t5Mi1teS5zaGFyZXBvaW50LmNvbUBkMzM4NGMwMi04ZWVlLTQ2NmYtYWVmMC1hMTczZTRhMWExM2EiLCJleHAiOiIxNzI4NjU4MjMzIn0.CgoKBHNuaWQSAjY0EgsIjIP_2raBtT0QBRoNMjAuMTkwLjE1MS4zNyoscjdaS3lkeG1wbiswSjhjM3RRZGFwTEh1QXZYNGVjcFFpRWdJYzArZWQzMD0wjAE4AUIQoVjgVBtwADDaIpE2VK4ttEoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwMjk4MjAzMjM0QGxpdmUuY29tegEyggESCQJMONPujm9GEa7woXPkoaE6kgED5bCPmgED6I6rogEKeG1AYW9lLnRvcKoBEDEwMDMyMDAyOTgyMDMyMzSyAS1hbGxmaWxlcy5yZWFkIGFsbGZpbGVzLndyaXRlIGFsbHByb2ZpbGVzLnJlYWTIAQE.m7YBCgLQXu20BCkczwmxFR2osLh4jOby7epuCHVLcf4&ApiVersion=2.0';
+                const newWindow = window.open(url);
+
+                // 检查新窗口是否成功打开
+                if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') { 
+                    throw new Error('链接无法打开，请检查网址或浏览器设置。'); 
+                }
+            } catch (error) {
+                alert(error.message); // 显示错误信息
+            }
+        }
+    </script>
+</body>
+</html>
