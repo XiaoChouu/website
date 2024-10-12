@@ -26,8 +26,7 @@
     </style>
 </head>
 <body>
-    <img src="welcome.jpg" class="my-image" alt="欢迎图片"> <!-- 添加alt属性以提高可访问性 -->
-
+    <img src="welcome.jpg" class="my-image" alt="欢迎图片"
     <button class="my-button" onclick="openLink()">点击进入Minecraft板块</button>
 
     <script>
@@ -36,9 +35,7 @@
                 const url = 'https://xiaochouu.github.io/website/minecrafttectonicplate.html';
                 const newWindow = window.open(url);
 
-                // 检查新窗口是否成功打开
-                if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') { 
-                    throw new Error('链接无法打开，请检查网址或浏览器设置。'); 
+            
                 }
             } catch (error) {
                 alert(error.message); // 显示错误信息
